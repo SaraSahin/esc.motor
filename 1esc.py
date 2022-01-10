@@ -4,6 +4,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 pi = pigpio.pi()
 # Calibrate ESC
+#Pini nereye bagladiysaniz ona gore dikkat edin
 ESC_GPIO = 13
 
 pi.set_servo_pulsewidth(ESC_GPIO, 1200) # Maximum throttle.
